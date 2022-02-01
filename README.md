@@ -33,7 +33,7 @@ When paused, all the methods annotated with `whenPausedthenProxy` fallback to an
 
 ## Security 4
 
-Extends Scurity 4 model.
+Extends Scurity 3 model.
 
 Add an allowlist, any method annotated with `onlyAllowlisted` can be execute only by allowed users when allowlisting is in place.
 
