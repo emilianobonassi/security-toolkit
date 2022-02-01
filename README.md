@@ -8,7 +8,7 @@ A collection of smart contracts for implementing security controls and guardrail
 
 ## Security 1
 
-Simple two role model, `operator` and `governance`. Operator can be updated by governance. Governance can be update by itself but requires acceptance from the new one.
+Simple two role model, `operator` and `governance`. Operator can be updated by governance. Governance can be updated by itself but requires acceptance from the new one.
 
 Operator can pause all the smart contract operation via [SCRAM()](https://en.wikipedia.org/wiki/Scram). Only governance can unpause.
 
@@ -27,7 +27,7 @@ Adds possibility for governance to execute any tx on behalf of the contract via 
 
 ## Security 3
 
-Extends Security 3 model.
+Extends Security 2 model.
 
 When paused, all the methods annotated with `whenPausedthenProxy` fallback to an external `emergencyImplementation`. Useful to override specific methods with an upgradable failsafe contract.
 
